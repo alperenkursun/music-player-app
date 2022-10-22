@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player App</title>
+</head>
+<body>
+    
+
+    <div id="mp-container" class="d-flex bg-light">
+        <div id="left">
+            <div id="left-top" class="position-relative">
+                <div id="title" class="h5 p-2 text-white bg-danger position-absolute top-0 start-0 w-100 text-center">Black Diamond - Stratovarius </div>
+                <div id="album" class="h6 mt-1 p-1 text-white bg-danger  w-100 text-center">Visions</div>
+                <img id="img" src="img/img1.jpg">
+                <audio id="audio" src="mp3/1.mp3" type="audio/mpeg"></audio>
+                
+                <input id="range" type="range" class="position-absolute top-100 start-50 translate-middle form-range">
+                <div id="times" class="p-1 bg-danger rounded-pill">
+                    <span id="currenttime" class="text-white">00:00</span>
+                    <span class="text-white">/</span>
+                    <span id="duration" class="text-white">00:00</span></div>
+            </div>
+            <div id="left-bottom" class="">
+                <div class="btn-group text-center">
+                    <div id="prevbtn" class="btn btn-danger btn-lg"><i class="fa-solid fa-backward-step"></i></div>
+                    <div id="playbtn" class="btn btn-danger btn-lg"><i class="fa-solid fa-play"></i></div>
+                    <div id="pausebtn" class="btn btn-danger btn-lg"><i class="fa-solid fa-pause"></i></div>
+                    <div id="stopbtn" class="btn btn-danger btn-lg"><i class="fa-solid fa-stop"></i></div>
+                    <div id="nextbtn" class="btn btn-danger btn-lg"><i class="fa-solid fa-forward-step"></i></div>
+                    <div id="2x" class="btn btn-danger btn-lg"><i>2x</i></div>
+                    <div id="repeatbtn" class="btn btn-danger btn-lg"><i class="fa-solid fa-repeat"></i></div>
+                    <div id="volumebtn"class="btn btn-danger btn-lg">
+                    <input id="volumerange" type="range">
+                    <i class="fa-solid fa-volume-xmark d-none"></i>
+                    <i class="fa-solid fa-volume-off d-none"></i>
+                    <i class="fa-solid fa-volume-low"></i>
+                    <i class="fa-solid fa-volume-high d-none"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="right" class=" overflow-auto">
+            <div id="appname" class="fs-6 p-2 bg-danger d-flex justify-content-center text-light">My Playlist  <i class="fa-solid fa-music p-1"></i></div>
+            <div id="musicplayerlist" class="list-group list-group-flush">
+                
+                <!-- <div class="list-group-item d-flex justify-content-between align-items-center">
+                    <span id="mlsingandsinger">Black Diamond - Stratovarius <span class="d-none"><i class="fa-regular fa-circle-play"></i></span></span>
+                    <span id="mlsingduration" class="badge text-bg-danger">00:00</span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a3e10ed635.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
